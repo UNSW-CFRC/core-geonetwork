@@ -1,0 +1,48 @@
+<header class="gn-header"
+        data-ng-show="gnCfg.mods.header.enabled && gnCfg.mods.header.isLogoInHeader">
+  <div data-ng-class="fluidHeaderLayout ? 'container-fluid' : 'container'">
+    <div class=row>
+      <div class="col-md-12 text-{{gnCfg.mods.header.logoInHeaderPosition}}">
+        <a data-gn-active-tb-item="{{gnCfg.mods.home.appUrl}}">
+          <img class="{{gnCfg.mods.header.logoInHeaderPosition}}"
+               alt="{{'siteLogo' | translate}}"
+               data-ng-src="{{gnUrl}}../images/logos/{{info['node/id'] || info['system/site/siteId']}}.png?random{{info['system/site/lastUpdate']}}"/>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<div class="aliview">Welcome to AHDAP Portal</div>
+
+<!--<div class="gn-search-page"
+     role="main"
+     data-ng-controller="GnSearchController">
+  <cookiewarning></cookiewarning>
+
+    <div data-gn-saved-selections="">
+      <div data-ng-include="'../../catalog/views/aliview/templates/home.html'"
+           data-ng-show="activeTab == '/home'"/>
+&lt;!&ndash;      <div data-ng-include="'../../catalog/views/default/templates/results.html'"&ndash;&gt;
+&lt;!&ndash;           data-ng-show="activeTab == '/search'"/>&ndash;&gt;
+&lt;!&ndash;      <div data-ng-if="isMapViewerEnabled && !isExternalViewerEnabled"&ndash;&gt;
+&lt;!&ndash;           data-ng-include="'../../catalog/views/default/templates/map.html'"&ndash;&gt;
+&lt;!&ndash;           data-ng-show="activeTab == '/map'"/>&ndash;&gt;
+&lt;!&ndash;      <div data-ng-include="'../../catalog/views/default/templates/recordView.html'"&ndash;&gt;
+&lt;!&ndash;           data-ng-show="activeTab == '/metadata'" class="gn-view-approved"/>&ndash;&gt;
+&lt;!&ndash;      <div data-ng-include="'../../catalog/views/default/templates/recordView.html'"&ndash;&gt;
+&lt;!&ndash;           data-ng-show="activeTab == '/metadraf'" class="gn-view-not-approved"/>&ndash;&gt;
+&lt;!&ndash;      <div data-ng-include="'../../catalog/views/default/templates/page.html'"&ndash;&gt;
+&lt;!&ndash;           data-ng-if="activeTab == '/page'"/>&ndash;&gt;
+    </div>
+  </div>
+</div>-->
+<h2>test</h2>
+
+<div class="navbar navbar-default gn-bottom-bar" role="navigation"
+     data-ng-show="gnCfg.mods.footer.enabled"
+     data-ng-include="'../../catalog/views/ahdap/templates/footer.html'">
+</div>
+
+
